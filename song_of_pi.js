@@ -19,7 +19,7 @@ function processData(input) {
             if(Number(test[j].length) > 9 || checkNumber(test[j]))
                 break;
         }
-        if(totalChars < 500 || Number(test[j].length) > 9 || checkNumber(test[j])) {
+        if(totalChars < 500 || Number(test[j].length) <= 9 || !checkNumber(test[j])) {
             for(var k = 0; k<lengthOfTest.length;k++) {
                 if(lengthOfTest.charAt(k) == PI.charAt(k)) 
                     counter++; 
